@@ -8,10 +8,10 @@ import { SessionProvider } from 'next-auth/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'blayhub website',
-  description: 'This is the description page'
-}
+// export const metadata = {
+//   title: 'blayhub website',
+//   description: 'This is the description page'
+// }
 
 export default function RootLayout({ children }) {
   return (
