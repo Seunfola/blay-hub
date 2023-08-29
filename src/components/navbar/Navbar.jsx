@@ -32,11 +32,11 @@ const links = [
     url: "/contact"
   },
 
-  {
-    id: 6,
-    title: "Dashboard",
-    url: "/dashboard"
-  },
+  // {
+  //   id: 6,
+  //   title: "Dashboard",
+  //   url: "/dashboard"
+  // },
 
 ];
 
@@ -50,7 +50,7 @@ const Navbar = () => {
         </Link>
         ))}
 
-        <Button url="/signup" text="Sign Up" />
+        <Button url="/dashboard" text="Sign Up" />
       </div>
 
     </div>

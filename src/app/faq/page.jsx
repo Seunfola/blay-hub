@@ -1,23 +1,14 @@
 
 'use client'
 import React from 'react'
-
+import styles from './page.module.css'
 import { useState } from 'react';
 import { feeds } from './data';
-import NavArea from './navigation';
 import PageContent from './PageContent';
 const FAQ = () => {
     const [page, setPage] = useState(0);
-    const [title, setTitle] = useState(feeds[0].title);
     const [openPage, setOpenPage] = useState(null);
     const [openIndex, setOpenIndex] = useState(null);
-
-    const handleNavClick = (event) => {
-        const page = event.target.dataset.index;
-        const title = feeds[page].title;
-        setPage(page);
-        setTitle(title);
-    };
 
     const toggle = (event) => {
         const page = event.target.parentNode.dataset.page;
@@ -33,17 +24,11 @@ const FAQ = () => {
 
     return (
         <div>
-            <nav className="faq_nav">
-                <ol>
-                    <NavArea update={handleNavClick} />
-                </ol>
-            </nav>
-
             <PageContent
-            // toggle={toggle}
-            // openIndex={openIndex}
-            // openPage={openPage}
-            // page={page}
+                toggle={toggle}
+                openIndex={openIndex}
+                openPage={openPage}
+                page={page}
             />
         </div>
     );

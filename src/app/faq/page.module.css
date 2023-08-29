@@ -1,109 +1,51 @@
-h1, h2 {
-  color: #444;
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.nav {
+  display: flex;
 }
 
-.faq_nav {
-  display:block;
-  width:100%;
-  float:left;
-  border-bottom: 1px solid #494949;
-
-  
-  ol {
-  padding:0; 
-  margin:0;  
+  .listEnvelope {
+  display: flex;
+  padding:10px; 
   list-style: none; 
+  gap: 1rem;
   border-bottom: 1px solid #494949; 
   }
   
-  li {
-    display: inline-block;
-    /* float: left; */
+  .list {
     padding:12px 20px 6px 0;
   }
-  
-  h4 {
-    font-weight: 300;
-    margin:0;
-  }  
-  a {
-    display:inline-block;
-    padding:0 0 2px 0;
+
+.btnm {
+    padding:12px 30px;
     text-decoration:none;
     text-transform: UPPERCASE;
-    color:white;
-    border-bottom: 1px solid transparent;
-    &:hover {
-      border-bottom: 1px solid #fff;
+    border:none;
+    outline:none;
+    font-size: 32px;
+    font-weight:600;
+    .btnm:focus {
+      border-bottom: 1px solid #0b9959;
+      
     }
   }
+.text{
+  font-size: 26px;
 }
-
-.selected {
-  border-bottom: 1px solid #fff;
+.envelope{
+  margin:10px;
 }
-
-.faq_page_contents {
-  display:block;
-  width:100%;
-  float:left; 
-  padding: 10px 0 0 20px;
+.text{
+  margin: 10px auto;
+  padding: 10px;
 }
-.faq_question {
-  position: relative;
-  cursor: pointer;
-  padding-left: 20px;
-    &:after {
-      position: absolute;
-      background: none;
-      content: "\25bc";
-      
-      font-size: 14px;
-      top: 4px;
-      left: 0;
-      pointer-events: none;
-      transform-origin: 50% 40%;
-      transform: rotate(-90deg);
-      transition: all .3s ease;
-    }
-}
-
-.faq_question {
-  position: relative;
-  cursor: pointer;
-  padding-left: 20px;
-    &:after {
-      position: absolute;
-      background: none;
-      content: "\25bc";
-      
-      font-size: 14px;
-      top: 4px;
-      left: 0;
-      pointer-events: none;
-      transform-origin: 50% 40%;
-      transform: rotate(-90deg);
-      transition: all .3s ease;
-    }
-}
-.faq_question_open {
-  &:after {
-   top: 2px;
-
-    transform: rotate(0deg);
-  }
-}
-
-.faq_answer {
-   display:block;
-   overflow: hidden;
-   max-height:0;
-   padding-left: 20px;
-   transition: max-height 0.5s ease;
-}
-.faq_answer_open {
-   display:block;
-   padding-left: 20px;
-   max-height:50px;  
-   transition: max-height 0.5s ease;
+.item{
+  margin: 10px;
+  font-size: 20px;
+  border: 1px solid #0b9959;
+  width: max-content;
+  padding: 20px;
 }
