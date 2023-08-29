@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { feeds } from './data'; 
+import { feeds } from './data';
 import styles from './page.module.css'
 
 
@@ -30,7 +30,7 @@ const Pagination = () => {
 
     return (
         <div className={styles.container}>
-            <nav className={styles.nav}> 
+            <nav className={styles.nav}>
                 <ul className={styles.listEnvelope}>
                     {feeds.map((feed, index) => (
                         <li className={styles.list} key={index}>
@@ -39,14 +39,17 @@ const Pagination = () => {
                             </button>
                         </li>
                     ))}
+                    <li className={styles.lists}>
                     <input
                         type="text"
                         placeholder="Search keywords"
+                        className={styles.input}
                         value={searchWords}
                         onChange={(e) => setSearchWords(e.target.value)}
                     />
-                    <button onClick={handleSearch}>Search</button>
-                    <button onClick={clearSearch}>Clear</button>
+                    <button className={styles.click} onClick={handleSearch}>Search</button>
+                    <button className={styles.click} onClick={clearSearch}>Clear</button>
+                    </li>
                 </ul>
             </nav>
             <div className={styles.envelope}>
@@ -62,9 +65,9 @@ const Pagination = () => {
                     </div>
                 ))}
                 <h2 className={styles.text}>{feeds[currentPage].title}</h2>
-                
-                   
-                
+
+
+
                 <div className={styles.content}>
                     {feeds[currentPage].items.map((item, index) => (
                         <div key={index} className={styles.item}>
