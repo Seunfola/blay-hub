@@ -6,11 +6,8 @@ import Footer from '@/components/footer/Footer'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { SessionProvider } from 'next-auth/react'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'blayhub consultancy'
-}
 
 const RootLayout = ({ children }) => {
   return (

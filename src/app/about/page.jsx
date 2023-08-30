@@ -17,7 +17,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.itemTitle}>Immediate Action, Comprehensive Solutions.</h1>
           <p className={styles.itemDesc}>
-            At Blayhub, we're not just on the clock; we're ahead of it. Whether it's our meticulous transcriptionists, our AI data experts,
+            At Blayhub, we are not just on the clock; we&apos;re ahead of it. Whether it&apos;s our meticulous transcriptionists, our AI data experts,
             voice-over talents, or our multilingual dataset creators, our team stands ready around-the-clock. From audio-video conversions to
             AI data consultations, submit your requirements and it will be expertly addressed and delivered swiftly.
             <br />
