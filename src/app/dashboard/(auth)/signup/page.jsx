@@ -11,7 +11,7 @@ const SignUP = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const name = e.target[0].value;
+        const fullname = e.target[0].value;
         const email = e.target[1].value;
         const password = e.target[2].value;
 
@@ -22,9 +22,10 @@ const SignUP = () => {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name,
+                    fullname,
                     email,
                     password,
+                    username,
                 }),
             });
             res.status === 201 && router.push("/dashboard/login?success=Account has been created");
@@ -84,9 +85,9 @@ const SignUP = () => {
                 />
                 <div className={styles.gender}>
                     Choose Gender
-                        <input type="radio" name="gender" value="male"/> Male
-                        <input type="radio" name="gender" value="female"/> Female
-                    </div>                            
+                    <input type="radio" name="gender" value="male" required /> Male
+                    <input type="radio" name="gender" value="female" required /> Female
+                </div>
                 <div className={styles.checkbox}>
                     <input
                         type="checkbox"
