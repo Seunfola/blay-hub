@@ -34,7 +34,19 @@
   justify-content:center;
   
 }
-.btnm {
+.isActive{
+  background-color:#007bff;
+  color:#fff;
+   padding:12px 30px;
+ text-transform: UPPERCASE;
+ border:none;
+ cursor:pointer;
+ border-radius:10px;
+ outline:none;
+ font-size: 20px;
+ font-weight:600;
+}
+.inActive {
  padding:12px 30px;
  text-transform: UPPERCASE;
  border:none;

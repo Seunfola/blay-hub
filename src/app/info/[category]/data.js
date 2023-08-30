@@ -46,10 +46,10 @@ export const items = {
                 "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
         }
     ],
-    applications: [
+    application: [
         {
             id: 1,
-            title: "Creative Portfolio",
+            title: "Evaluation Projects",
             desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
             image:
                 "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",

@@ -11,7 +11,7 @@ const Question = (props) => {
     };
 
     return (
-        <div>
+        <div className={StyleSheet.questions}>
             <h4
                 className="faq_question"
                 data-page={props.page}

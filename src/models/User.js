@@ -1,6 +1,4 @@
-    import mongoose from "mongoose";
-import mongoose from "./Post";
-
+import mongoose from "mongoose";
 const {Schema} = mongoose
 
 const userSchema = new Schema ({

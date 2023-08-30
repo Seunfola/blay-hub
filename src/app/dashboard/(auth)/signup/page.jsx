@@ -41,10 +41,11 @@ const SignUP = () => {
             <form onSubmit={handleSubmit} className={styles.form}>
                 <input
                     type="text"
-                    placeholder="Username"
+                    placeholder="FullName"
                     required
                     className={styles.input}
                 />
+
                 <input
                     type="text"
                     placeholder="Email"
@@ -57,6 +58,44 @@ const SignUP = () => {
                     required
                     className={styles.input}
                 />
+                <input
+                    type="text"
+                    placeholder="Username"
+                    required
+                    className={styles.input}
+                />
+                <input
+                    type="text"
+                    placeholder="PhoneNumber"
+                    required
+                    className={styles.input}
+                />
+                <input
+                    type="text"
+                    placeholder="Address"
+                    required
+                    className={styles.input}
+                />
+                <input
+                    type="text"
+                    placeholder="Country"
+                    required
+                    className={styles.input}
+                />
+                <div className={styles.gender}>
+                    Choose Gender
+                        <input type="radio" name="gender" value="male"/> Male
+                        <input type="radio" name="gender" value="female"/> Female
+                    </div>                            
+                <div className={styles.checkbox}>
+                    <input
+                        type="checkbox"
+                        required
+                        className={styles.input}
+                    />
+                    <p>click here to agree with the terms and conditions</p>
+                </div>
+
                 <button className={styles.button}>Register</button>
                 {error && "Something went wrong!"}
             </form>

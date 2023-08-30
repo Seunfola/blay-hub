@@ -22,7 +22,14 @@
   font-size: 20px;
   font-weight: bold;
 }
-
+.checkbox{
+  display: flex;
+  gap: 0.5rem;
+}
+.gender{
+  display: flex;
+  gap: 0.7rem;
+}
 .button {
   width: 300px;
   padding: 20px;
