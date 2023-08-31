@@ -5,7 +5,7 @@ import Hero from '@/components/hero/Hero'
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.envelope}>
       <div className={styles.container}>
         <div className={styles.item}>
           <h1 className={styles.title}>Pioneering AI: Bridging Talent and Tech.</h1>

@@ -1,7 +1,7 @@
 .envelope{
   width:100%;
-  height:100vh;
   margin:auto;
+  height: max-content;
 }
 .container {
   display: flex;
@@ -31,7 +31,7 @@
   width: 100%;
   height: 500px;
   object-fit: contain;
-  /* animation: move 3s infinite ease alternate; */
+  animation: move 3s infinite ease alternate;
 }
 
 @keyframes move {
@@ -47,4 +47,26 @@
 .desc {
   font-size: 24px;
   font-weight: 300;
+}
+@media only screen and (max-width: 896px) and (min-width: 360px) {
+  .envelope {
+    flex-direction:column;
+   align-items: center;
+  }
+    .container{
+display: block;
+    }
+    .title{
+      display: block;
+      font-size: 38px;
+    }
+    .desc{
+      font-size: 20px;
+    }
+    .img{
+      display: block;
+      animation:none;
+      height: fit-content;
+      margin: 10px auto;
+}
 }
