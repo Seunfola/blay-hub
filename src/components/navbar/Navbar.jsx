@@ -1,65 +1,67 @@
-'use client'
-// import { useState } from 'react';
-import Link from 'next/link'
+import { useState } from 'react';
+import Link from 'next/link';
 import styles from './navbar.module.css';
 import DarkMode from '../darkMode/DarkMode';
 import Button from '@/components/button/Button';
-// import { BiAlignJustify } from 'react-icons/bi';
 
 const links = [
   {
     id: 1,
-    title: "Home",
-    url: "/",
+    title: 'Home',
+    url: '/',
   },
   {
     id: 2,
-    title: "About",
-    url: "/about",
+    title: 'About',
+    url: '/about',
   },
   {
     id: 3,
-    title: "Services",
-    url: "/info"
+    title: 'Services',
+    url: '/info',
   },
-
   {
     id: 4,
-    title: "FAQ",
-    url: "/faq",
+    title: 'FAQ',
+    url: '/faq',
   },
   {
     id: 5,
-    title: "Contact",
-    url: "/contact"
+    title: 'Contact',
+    url: '/contact',
   },
 ];
 
 const Navbar = () => {
-  // const [menuOpened, setMenuOpened] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // const getMenuStyles = (menuOpened) => {
-  //   if (document.documentElement.clientWidth <= 880) {
-  //     return { display: menuOpened ? 'block' : 'none',}
-  //   }
-  // }
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className={styles.container}>
-      <Link href='/' className={styles.logo} >BLAY-HUB</Link>
-
-      <div className={styles.links} >
-        <DarkMode />
-        {links.map(link => (<Link key={link.id} href={link.url} className={styles.link} >{link.title}
-        </Link>
-        ))}
-
-        <Button url="/dashboard/signup" text="Sign Up" />
+    <div className={`${styles.container} ${menuOpen ? styles.open : 'none'}`}>
+      <Link href="/" className={styles.logo}>
+        BLAY-HUB
+      </Link>
+      <div className={styles.navWrapper}>
+        <div className={`${styles.menuIcon} ${menuOpen ? styles.open : 'none'}`} onClick={toggleMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
+        <div className={styles.links}>
+          <DarkMode />
+          {links.map((link) => (
+            <Link key={link.id} href={link.url} className={styles.link}>
+              {link.title}
+            </Link>
+          ))}
+          <Button url="/dashboard/signup" text="Sign Up" />
+        </div>
       </div>
-      {/* <div className={styles.icon} onClick={() => setMenuOpened((prev) => !prev)}>
-        < BiAlignJustify /> </div> */}
-
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
