@@ -55,7 +55,11 @@
    justify-content:center;
  }
  .item{
- transform: scale(0.6);
+ transform: scale(0.8);
+ -webkit-transform: scale(0.8);
+ -moz-transform: scale(0.8);
+ -ms-transform: scale(0.8);
+ -o-transform: scale(0.8);
 }
  .title{
   font-size: 28px;
