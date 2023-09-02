@@ -54,12 +54,8 @@
    align-items: center;
    justify-content:center;
  }
- .item:hover{
- transform: scale(0.7);
- -webkit-transform: scale(0.7);
- -moz-transform: scale(0.7);
- -ms-transform: scale(0.7);
- -o-transform: scale(0.7);
+ .item{
+ transform: scale(0.6);
 }
  .title{
   font-size: 28px;
