@@ -1,56 +1,3 @@
-.mainTitle {
-  font-size: 100px;
-}
-
-.container {
-}
-
-.selectTitle {
-  margin: 20px 0px;
-  
-}
-
-.items {
-  display: flex;
-  gap: 50px;
-}
-
-.item {
-  border: 5px solid #bbb;
-  border-radius: 5px;
-  width: 300px;
-  height: 400px;
-  position: relative;
-  background-size: cover !important;
-}
-
-.item:nth-child(1) {
-  background: url("/illustration.png");
-}
-.item:nth-child(2) {
-  background: url("/websites.jpg");
-}
-.item:nth-child(3) {
-  background: url("/apps.jpg");
-}
-
-.title {
-  position: absolute;
-  /* right: 10px; */
-  bottom: 10px;
-  font-size: 32px;
-  font-weight: bold;
-  /* text-align: justify; */
-  padding: 20px;
-  
-}
-
-.item:hover .title {
-  color: #53c28b;
-}.mainTitle {
-  font-size: 100px;
-}
-
 .container {
 }
 
@@ -95,3 +42,26 @@
 .item:hover .title {
   color: #53c28b;
 }
+@media only screen and (max-width: 896px) and (min-width: 360px){
+ .container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+ }
+ .items{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:center;
+ }
+ .item:hover{
+ transform: scale(0.7);
+ -webkit-transform: scale(0.7);
+ -moz-transform: scale(0.7);
+ -ms-transform: scale(0.7);
+ -o-transform: scale(0.7);
+}
+ .title{
+  font-size: 28px;
+ }
+ }

@@ -16,7 +16,10 @@ const Home = () => {
           <Image src='/hero.png' width={500} height={500} alt='hero image' className={styles.img} />
         </div>
       </div>
-      <Hero />
+      <div className={styles.Hero}>
+        <Hero />
+      </div>
+
     </div>
 
   )

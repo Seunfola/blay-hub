@@ -40,10 +40,6 @@ flex-direction: column;
     padding: 20px;
     color: orange;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
 .secondaryTest{
     display: flex;
@@ -71,6 +67,8 @@ flex-direction: column;
     }
     .desc{
         margin: 20px auto;
+        text-align: left;
+        width: 100%;
     }
     .secondaryText{
       font-size: 20px;

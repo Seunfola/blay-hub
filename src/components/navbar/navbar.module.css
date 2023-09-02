@@ -55,6 +55,7 @@
     right: 0;
     width: 100%;
     align-items: left;
+    z-index: 1;
   }
 
   .open .links {

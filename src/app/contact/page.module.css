@@ -20,14 +20,6 @@
     object-fit: contain;
     /* animation: move 3s infinite ease alternate; */
 }
-@keyframes move{
-    from{
-        transform:translateY(-17px);
-       }
-    to{
-        transform:translateY(0px) scale(1.05)
-}
-}
 
 .form{
     flex: 1;
@@ -46,3 +38,21 @@
     border-radius: 6px;
     font-weight: bold;
 }
+@media only screen and (max-width: 896px) and (min-width: 360px) {
+  .envelope {
+    display: block;
+    margin: 20px auto;
+  }
+  .title{
+    font-size: 35px;
+  }
+  .content{
+    display: block;
+  }
+  .imgContainer{
+     display: block;
+      animation:none;
+      height: fit-content;
+      margin: 10px auto;
+  }
+  }
