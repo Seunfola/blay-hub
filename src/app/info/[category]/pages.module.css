@@ -24,7 +24,9 @@
 .img{
   object-fit: cover;
 }
-
+.btn{
+  margin:10px auto;
+}
 .content{
   flex:1;
   display: flex;
@@ -51,5 +53,16 @@
 }
 .item{
   display: block;
+}
+.title{
+  text-align:center;
+}
+.desc{
+  text-align:justify;
+  width:100%;
+  margin:auto;
+}
+.imgContainer{
+  margin: 10px auto;
 }
 }

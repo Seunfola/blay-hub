@@ -54,5 +54,14 @@
 }
 .textContainer{
     display: block;
+    width: fit-content;
+}
+.itemTitle{
+    text-align: center;
+}
+.itemDesc{
+    width:100%;
+    text-align: justify;
+    margin: auto;
 }
   }
