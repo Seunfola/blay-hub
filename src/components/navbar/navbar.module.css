@@ -39,30 +39,35 @@
 @media only screen and (max-width: 896px) and (min-width: 360px){
  .container{
     position:relative;
-    height: max-content;
-    margin-bottom:60px ;
     margin-top: 20px;
+    margin-bottom: 30px;
  }
   .menuIcon {
     display: flex;
    flex-direction: column;
     align-items: flex-start;
+    
   }
 
   .links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 30px;
+    right: -110px;
     width: 100%;
-    align-items: left;
-    z-index: 1;
+  }
+  /* .logo{
+    margin-top: -140px;
+  } */
+  .open{
+    height: 290px;
+    align-items: center;
+    top: -10px;
+    right: 10px;
   }
 
   .open .links {
     display: flex;
-
   }
-
 }
