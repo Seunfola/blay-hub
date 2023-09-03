@@ -39,7 +39,9 @@
 @media only screen and (max-width: 896px) and (min-width: 360px){
  .container{
     position:relative;
-    padding: 30px;
+    height: max-content;
+    margin-bottom:60px ;
+    margin-top: 20px;
  }
   .menuIcon {
     display: flex;
@@ -51,8 +53,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 10px;
+    left: 0;
     width: 100%;
     align-items: left;
     z-index: 1;
@@ -60,5 +62,7 @@
 
   .open .links {
     display: flex;
+
   }
+
 }

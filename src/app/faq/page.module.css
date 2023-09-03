@@ -84,3 +84,34 @@
   width: max-content;
   padding: 20px;
 }
+@media only screen and (max-width: 896px) and (min-width: 360px) {
+  .envelope {
+    flex-direction:column;
+   align-items: center;
+  }
+  .nav{
+    display: block;
+  }
+  .listEnvelope{
+    display: block;
+  }
+  .lists{
+    display: block;
+  }
+  .click{
+    display: block;
+    margin: 10px auto;
+  }
+  .item{
+    display: block;
+    transform: scale(0.7);
+    margin:auto ;
+    width:100%;
+   align-items:center;
+    justify-content: flex-start;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+  }
