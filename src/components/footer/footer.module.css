@@ -14,3 +14,12 @@
     opacity: 0.6;
     cursor: pointer;
 }
+@media only screen and (max-width: 896px) and (min-width: 360px){
+ .container{
+    margin-bottom:20px ;
+    margin-top: 20px;
+    }
+    .text{
+        width: 43%;
+    }
+ }
